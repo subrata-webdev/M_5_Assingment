@@ -4,11 +4,11 @@ function studentMark($physic = 45, $chemistry = 56, $gMath = 95, $biology = 45, 
   $totalMark = $physic + $chemistry + $gMath + $biology + $ict;
   $averageMark = $totalMark / 5;
   if (
-    ($physic < 0 && $physic > 100) or
-    ($chemistry < 0 && $chemistry > 100) or
-    ($gMath < 0 && $gMath > 100) or
-    ($biology < 0 && $biology > 100) or
-    ($ict < 0 && $ict > 100)
+    ($physic < 0 or $physic > 100) or
+    ($chemistry < 0 or $chemistry > 100) or
+    ($gMath < 0 or $gMath > 100) or
+    ($biology < 0 or $biology > 100) or
+    ($ict < 0 or $ict > 100)
   ) {
     echo "Mark range is Invalid";
   } elseif ($physic < 33 or $chemistry < 33 or $gMath < 33 or $biology < 33 or $ict < 33) {
@@ -49,7 +49,5 @@ function studentMark($physic = 45, $chemistry = 56, $gMath = 95, $biology = 45, 
   }
 
 }
-studentMark(60, 40, 36, 33, 35)
-
-
-  ?>
+studentMark(10, 40, 78, 90, 85)
+?>
