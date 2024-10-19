@@ -49,7 +49,7 @@ function studentMark($physic = 45, $chemistry = 56, $gMath = 95, $biology = 45, 
   }
 
 }
-studentMark(100, 40, 36, 33, 35)
+studentMark(60, 40, 36, 33, 35)
 
 
   ?>
